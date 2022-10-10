@@ -1,0 +1,13 @@
+.coffee {
+    &__block {
+        height: 560px;
+        width: 257px;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr;
+        &-content {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

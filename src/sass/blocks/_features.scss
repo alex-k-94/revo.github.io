@@ -1,0 +1,24 @@
+.features {
+    margin-top: 87px;
+    min-height: 385px;
+    &__blocks {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr;
+        column-gap: 68px;
+    }
+    &__block {
+        margin-top: 72px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &-title {
+            margin-top: 42px;
+        }
+        &-text {
+            margin-top: 12px;
+        }
+    }
+}

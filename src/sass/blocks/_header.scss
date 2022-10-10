@@ -1,0 +1,52 @@
+.header {
+    min-height: 768px;
+    &__wrapper {
+        position: relative;
+        height: 768px;
+        display: grid;
+        grid-template-columns: 342px 570px 228px;
+        grid-template-rows: 1fr;
+    }
+    &__opacity {
+        position: fixed;
+        display: flex;
+        justify-content: space-around;
+        width: 1040px;
+        height: 40px;
+        top: 72px;
+        left: 130px;
+    }
+    &__side {
+        position: relative;
+        &-text {
+            position: absolute;
+            left: 130px;
+            top: 504px;
+            z-index: 20;
+        }
+    }
+    &__side-word {
+        color: $primary-color;
+    }
+    &__white {
+        color: #fff;
+        background-color: $accent-color;
+    }
+    &__img {
+        background: url("../../img/bg.jpg") center (center/cover) no-repeat;
+    }
+    &__menu {
+        background-color: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item {
+        margin-bottom: 40px;
+    }
+    &__link {
+        &:hover {
+            font-weight: 700;
+        }
+    }
+}
