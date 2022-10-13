@@ -1,13 +1,70 @@
+.slick__carousel {
+    height: 544px;
+    width: 1287.5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 30px;
+    row-gap: 32px;
+    overflow: hidden;
+}
+
 .coffee {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "left wrapper right";
+    position: relative;
+    &__left {
+        grid-area: left;
+        position: absolute;
+        background-color: $primary-color;
+    }
+    &__wrapper {
+        grid-area: wrapper;
+        position: absolute;
+        z-index: 20;
+    }
+    &__right {
+        grid-area: right;
+        position: absolute;
+    }
     &__block {
-        height: 560px;
-        width: 257px;
+        width: 559px;
+        height: 256px;
         display: grid;
-        grid-template-columns: 40% 60%;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
+        transition: all 0.6s;
+        &:hover {
+            box-shadow: 2.5px 2.5px 15px gray;
+        }
         &-content {
             display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &-inner {
+            width: 240px;
+            height: 172px;
+            display: flex;
             flex-direction: column;
+        }
+        &-prise {
+            color: $accent-color;
+        }
+        &-title {
+            margin-top: 8px;
+            color: #232c38;
+        }
+        &-text {
+            margin-top: 24px;
+            color: #151d28;
+        }
+        &-btns {
+            margin-top: 18px;
+            display: flex;
         }
     }
 }
