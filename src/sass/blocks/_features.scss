@@ -1,6 +1,7 @@
 .features {
-    margin-top: 87px;
+    padding-top: 87px;
     min-height: 385px;
+    background-color: $back-color;
     &__blocks {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
