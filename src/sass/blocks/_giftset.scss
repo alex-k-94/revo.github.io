@@ -1,0 +1,42 @@
+.giftset {
+    background-color: $back-color;
+    padding-top: 42px;
+    &__block {
+        margin-top: 68px;
+        display: grid;
+        grid-template-columns: 490px 560px 88px;
+        grid-template-rows: 1fr;
+        &-content {
+            padding: 64px 68px 64px 62px;
+        }
+        &-price {
+            color: $accent-color;
+            font-weight: 600;
+        }
+        &-title {
+            margin-top: 12px;
+            font-weight: 700;
+        }
+        &-text {
+            margin-top: 12px;
+            font-weight: 300;
+        }
+        &-subblock {
+            margin-top: 24px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            column-gap: 38px;
+        }
+        &-coffee, &-mountain {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            grid-template-rows: 1fr;
+        }
+        &-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

@@ -1,8 +1,11 @@
-$(document).ready(function(){
-    $('.carousel__inner').slick({
-        speed: 1200,
-        adaptiveHeight: true,
-        prevArrow: '<button type="button" class="carousel-prev"><img src="icons/right.svg"></button>',
-        nextArrow: '<button type="button" class="carousel-next"><img src="icons/right.svg"></button>',
+window.addEventListener('DOMContentLoaded', function(){
+
+    /* Slider */
+
+    const line = document.querySelector('.coffee__carousel-line');
+    const btn = document.querySelector('.coffee__carousel-arrow');
+
+    btn.addEventListener('click', function(){
+        line.classList.toggle('left');
     });
 });
