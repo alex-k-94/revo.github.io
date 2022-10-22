@@ -1,10 +1,15 @@
 .giftset {
+    min-height: 802px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $back-color;
     padding-top: 42px;
+    background: url('../../img/coffee_bg.png') no-repeat left bottom;
     &__block {
         margin-top: 68px;
         display: grid;
-        grid-template-columns: 490px 560px 88px;
+        grid-template-columns: 1fr 88px;
         grid-template-rows: 1fr;
         &-content {
             padding: 64px 68px 64px 62px;
@@ -29,6 +34,7 @@
             column-gap: 38px;
         }
         &-coffee, &-mountain {
+            width: 214px;
             display: grid;
             grid-template-columns: 30% 70%;
             grid-template-rows: 1fr;
@@ -38,5 +44,42 @@
             justify-content: center;
             align-items: center;
         }
+        &-btns {
+            margin-top: 46px;
+            display: flex;
+            justify-content: space-between;
+        }
+        &-btn {
+            width: 168px;
+        }
+        &-numbers {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(3, 1fr);
+        }
     }
+    &__number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $primary-color;
+        font-weight: 900;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__switch {
+        display: grid;
+        grid-template-columns: 490px 560px;
+        grid-template-rows: 1fr;
+    }
+}
+
+.switch__non-active {
+    display: none;
+}
+
+.non__active {
+     background-color: $light-gray;
+     color: $back-color;
 }
