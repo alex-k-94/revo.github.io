@@ -1,13 +1,10 @@
 .header {
     min-height: 768px;
     background-color: $back-color;
-    &__wrapper {
-        position: relative;
-        height: 768px;
-        display: grid;
-        grid-template-columns: 342px 570px 228px;
-        grid-template-rows: 1fr;
-    }
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% 50% 20%;
+    grid-template-rows: 1fr;
     &__opacity {
         position: fixed;
         display: flex;
@@ -21,7 +18,7 @@
         position: relative;
         &-text {
             position: absolute;
-            left: 130px;
+            left: 360px;
             top: 504px;
             z-index: 20;
         }

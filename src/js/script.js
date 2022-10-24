@@ -1,12 +1,21 @@
 window.addEventListener('DOMContentLoaded', function(){
 
-    /* Slider */
+    /* Slider for coffee */
 
-    const line = document.querySelector('.coffee__carousel-line');
-    const btn = document.querySelector('.coffee__carousel-arrow');
+    const coffeeLine = document.querySelector('.coffee__carousel-line');
+    const coffeeBtn = document.querySelector('.coffee__carousel-arrow');
 
-    btn.addEventListener('click', function(){
-        line.classList.toggle('left');
+    coffeeBtn.addEventListener('click', function(){
+        coffeeLine.classList.toggle('left');
+    });
+
+    /* Slider for combo */
+
+    const comboLine = document.querySelector('.combo__carousel-line');
+    const comboBtn = document.querySelector('.combo__carousel-arrow');
+
+    comboBtn.addEventListener('click', function(){
+        comboLine.classList.toggle('c-left');
     });
 
     /* giftset */
